@@ -6,6 +6,11 @@ body {
   @apply bg-dark
 }
 
+.bg-blur {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
 .shake-animation {
   animation: 4s shake infinite;
 }

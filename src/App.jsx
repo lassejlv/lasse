@@ -4,15 +4,11 @@ import { MdVerified } from "react-icons/md";
 import { FiGithub } from "react-icons/fi";
 import { CiMail } from "react-icons/ci";
 import { motion } from "framer-motion";
+import PageAnimation from "./animation";
 
 export default function App() {
   return (
-    <motion.main
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      className="container mx-auto pt-20"
-    >
+    <PageAnimation>
       <img
         src={config.avatar}
         alt="avatar"
@@ -61,6 +57,6 @@ export default function App() {
           </motion.a>
         ))}
       </div>
-    </motion.main>
+    </PageAnimation>
   );
 }

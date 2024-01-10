@@ -48,7 +48,7 @@ export default function App() {
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
-            className={`inline-block bg-darkLight w-1/2 font-bold p-3 rounded-[8px] text-white text-center leading-12 border-2 border-darkBorder ${button.name === "✨ Donate" && "shake-animation"}`}
+            className={`inline-block bg-darkLight w-10/12 md:w-1/2 font-bold p-3 rounded-[8px] text-white text-center leading-12 border-2 border-darkBorder ${button.name === "✨ Donate" && "shake-animation"}`}
             href={button.href}
             rel="noreferrer"
             key={index}

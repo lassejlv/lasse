@@ -18,7 +18,7 @@ export const config = {
     },
   ],
 
-  links: [
+  buttons: [
     {
       id: 1,
       name: "✨ Donate",
@@ -38,4 +38,40 @@ export const config = {
         icon: null,
     },
   ],
+
+  projects: [
+    {
+      name: "Movie Swiper",
+      description:
+        "A discord bot that allows you to swipe through movies and find something to watch.",
+      link: "https://www.movieswiper.xyz",
+      image: "https://www.movieswiper.xyz/logo-new-nbg.png",
+    },
+    {
+      name: "Robly Bot",
+      description: "A global discord economy bot, with a lot of cool features for your server.",
+      link: "https://roblybot.xyz",
+      image: "https://cdn.roblybot.xyz/files/NewRoblyWithoutBg.png",
+    },
+    {
+      name: "Includer.js",
+      description:
+        "A tiny JavaScript library that enables you to inject HTML content into the current page from external HTML files.",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png",
+      link: "https://github.com/latze05/includerjs",
+    },
+    {
+      name: "tailframe.css",
+      description: "Tailframe is a mordern css libary that comes with beautiful components out of the box.",
+      image: "https://tailframecss.lassejlv.dk/logo.avif",
+      link: "https://tailframecss.lassejlv.dk"
+    },
+    {
+      name: "Servemon",
+      description: "🚀⚡ Blazing fast & lightweight web cli server for Node.js",
+      image: "https://i.ibb.co/x36ysZ2/image.png",
+      link: "https://github.com/lassejlv/servemon"
+    }
+  ]
 };

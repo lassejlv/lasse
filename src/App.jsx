@@ -44,7 +44,7 @@ export default function App() {
 
       {/* buttons */}
       <div className="flex flex-col items-center space-y-5 justify-center mt-20">
-        {config.links.map((button, index) => (
+        {config.buttons.map((button, index) => (
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}

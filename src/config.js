@@ -1,7 +1,7 @@
 export const config = {
   avatar: "/lasse.png",
   name: "lasse",
-  bio: "hej med dig",
+  bio: "Full Stack Developer",
   socials: [
     {
       id: 1,

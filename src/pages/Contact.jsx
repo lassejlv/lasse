@@ -21,7 +21,7 @@ export default function Contact() {
 
     setLoading(true);
 
-    const res = await fetch("http://localhost:5001/resend", {
+    const res = await fetch("https://backboard.lassejlv.dk/resend", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

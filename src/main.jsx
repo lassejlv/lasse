@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import "./index.css";
 import NotFound from "./pages/NotFound.jsx";
 import Projects from "./pages/Projects.jsx";
+import Contact from "./pages/Contact.jsx";
 
 const router = createBrowserRouter([
   {
@@ -12,12 +13,12 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/projects",
-    element: <Projects />,
+    path: "/contact",
+    element: <Contact />,
   },
   {
-    path: "*",
-    element: <NotFound />,
+    path: "/projects",
+    element: <Projects />,
   },
 ]);
 

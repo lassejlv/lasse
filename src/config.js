@@ -16,6 +16,11 @@ export const config = {
       href: "mailto:lasse@hypll.org",
       icon: "mail"
     },
+    {
+      id: 3,
+      name: "discord",
+      href: "https://discord.com/users/508700048452878347",
+    }
   ],
 
   buttons: [
@@ -27,16 +32,16 @@ export const config = {
     },
     {
         id: 2,
-        name: "Discord",
-        href: "https://discord.com/users/508700048452878347",
-        icon: null,
-    },
-    {
-        id: 2,
         name: "Projects",
         href: "/projects",
         icon: null,
     },
+    {
+      id: 3,
+      name: "Contact",
+      href: "/contact",
+      icon: null
+    }
   ],
 
   projects: [

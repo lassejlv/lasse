@@ -6,6 +6,14 @@ body {
   @apply bg-dark
 }
 
+label {
+  @apply text-white font-bold text-xl
+}
+
+input, textarea { 
+  @apply bg-darkLight border-2 border-darkBorder rounded-[8px] p-3 outline-none text-white text-sm w-full;
+}
+
 .bg-blur {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);

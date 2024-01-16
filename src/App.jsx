@@ -3,6 +3,7 @@ import { config } from "./config";
 import { MdVerified } from "react-icons/md";
 import { FiGithub } from "react-icons/fi";
 import { CiMail } from "react-icons/ci";
+import { IoLogoDiscord } from "react-icons/io5";
 import { motion } from "framer-motion";
 import PageAnimation from "./animation";
 
@@ -37,6 +38,9 @@ export default function App() {
             )}
             {social.name === "mail" && (
               <CiMail className="text-white text-2xl mx-2" size="1.3em" />
+            )}
+            {social.name === "discord" && (
+              <IoLogoDiscord className="text-white text-2xl mx-2" size="1.3em" />
             )}
           </motion.a>
         ))}

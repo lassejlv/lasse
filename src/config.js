@@ -29,18 +29,21 @@ export const config = {
       name: "✨ Donate",
       href: "https://ko-fi.com/lassejlv",
       icon: null,
+      shake: true
     },
     {
         id: 2,
         name: "Projects",
         href: "/projects",
         icon: null,
+        shake: false
     },
     {
       id: 3,
       name: "Contact",
       href: "/contact",
-      icon: null
+      icon: null,
+      shake: false
     }
   ],
 

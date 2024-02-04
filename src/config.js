@@ -7,20 +7,20 @@ export const config = {
       id: 1,
       name: "github",
       href: "https://github.com/lassejlv",
-      icon: "github"
+      icon: "github",
     },
 
     {
       id: 2,
       name: "mail",
       href: "mailto:lasse@hypll.org",
-      icon: "mail"
+      icon: "mail",
     },
     {
       id: 3,
       name: "discord",
       href: "https://discord.com/users/508700048452878347",
-    }
+    },
   ],
 
   buttons: [
@@ -29,22 +29,29 @@ export const config = {
       name: "✨ Donate",
       href: "https://ko-fi.com/lassejlv",
       icon: null,
-      shake: true
+      shake: true,
     },
     {
-        id: 2,
-        name: "Projects",
-        href: "/projects",
-        icon: null,
-        shake: false
+      id: 2,
+      name: "Experience",
+      href: "/?showExperience=true",
+      icon: null,
+      shake: false,
+    },
+    {
+      id: 2,
+      name: "My Work",
+      href: "/projects",
+      icon: null,
+      shake: false,
     },
     {
       id: 3,
       name: "Contact",
       href: "/contact",
       icon: null,
-      shake: false
-    }
+      shake: false,
+    },
   ],
 
   projects: [
@@ -57,7 +64,8 @@ export const config = {
     },
     {
       name: "Robly Bot",
-      description: "A global discord economy bot, with a lot of cool features for your server.",
+      description:
+        "A global discord economy bot, with a lot of cool features for your server.",
       link: "https://roblybot.xyz",
       image: "https://cdn.roblybot.xyz/files/NewRoblyWithoutBg.png",
     },
@@ -71,15 +79,16 @@ export const config = {
     },
     {
       name: "tailframe.css",
-      description: "Tailframe is a mordern css libary that comes with beautiful components out of the box.",
+      description:
+        "Tailframe is a mordern css libary that comes with beautiful components out of the box.",
       image: "https://tailframecss.lassejlv.dk/logo.avif",
-      link: "https://tailframecss.lassejlv.dk"
+      link: "https://tailframecss.lassejlv.dk",
     },
     {
       name: "Servemon",
       description: "🚀⚡ Blazing fast & lightweight web cli server for Node.js",
       image: "https://i.ibb.co/x36ysZ2/image.png",
-      link: "https://github.com/lassejlv/servemon"
-    }
-  ]
+      link: "https://github.com/lassejlv/servemon",
+    },
+  ],
 };

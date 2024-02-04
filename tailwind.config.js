@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        dark: "#121213",
-        darkLight: "#202120",
-        darkBorder: "#282829"
+        dark: "#0c0d0f",
+        darkLight: "#1a1b1f",
+        darkBorder: "#2c2d32",
       }
     },
   },

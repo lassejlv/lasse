@@ -20,9 +20,9 @@ export default function Projects() {
         </p>
         <div className="flex flex-col items-center justify-center mt-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {config.projects.map((project) => (
+            {config.projects.map((project, index) => (
               <div
-                key={project.name}
+                key={index}
                 className="bg-darkLight border-2 border-darkBorder rounded-[8px] p-4"
               >
                 <img

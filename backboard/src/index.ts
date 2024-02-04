@@ -8,8 +8,12 @@ const app = new Hono();
 app.use("*", cors());
 
 app.get("/", (c) => {
-  return c.text("Hello Hono!");
+  return c.redirect("https://lassejlv.dk")
 });
+
+app.notFound((c) => {
+  return c.redirect("https://lassejlv.dk")
+})
 
 app.post("/resend", async (c) => {
   const body = await c.req.json();

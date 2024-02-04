@@ -22,7 +22,7 @@ app.post("/resend", async (c) => {
   // Send email stuff
   const { data, error } = await resend.emails.send({
     from: "Hypll Mail-Service <transport@mail.hypll.org>",
-    to: ["vestergaardlasse2@gmail.com"],
+    to: [process.env.EMAIL_TO as string],
     subject: "New contact form submission",
     html: `
       <h1>New contact form submission</h1>

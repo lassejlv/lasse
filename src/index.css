@@ -4,6 +4,7 @@
 
 body {
   @apply bg-dark;
+  font-family: "Poppins", sans-serif;
 }
 
 label {

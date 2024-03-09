@@ -1,7 +1,13 @@
 export const config = {
   avatar: "/lasse.png",
   name: "lasse",
-  bio: "Full Stack Developer",
+  typewriter_strings: [
+    "Full Stack Developer",
+    "Web Developer",
+    "Backend Developer",
+    "Frontend Developer",
+    "Discord Bot Developer",
+  ],
   socials: [
     {
       id: 1,

@@ -5,6 +5,7 @@ import { MdVerified } from "react-icons/md";
 import { FiGithub } from "react-icons/fi";
 import { CiMail } from "react-icons/ci";
 import { IoLogoDiscord } from "react-icons/io5";
+import Typewriter from 'typewriter-effect';
 
 export default function App() {
   return (
@@ -20,7 +21,17 @@ export default function App() {
       <h1 className="text-[20px] font-bold text-white text-center mt-4">
         {config.name} <MdVerified className="inline text-blue-500" />
       </h1>
-      <p className="text-[16px] text-white text-center mt-2">{config.bio}</p>
+      <p className="text-[16px] text-white text-center mt-2">
+        <Typewriter
+          options={{
+            strings: config.typewriter_strings,
+            deleteSpeed: 20,
+            delay: 70,
+            autoStart: true,
+            loop: true,
+          }}
+        />
+      </p>
 
       <div className="flex justify-center mt-5">
         {config.socials.map((social, index) => (

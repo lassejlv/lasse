@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import NextTopLoader from "nextjs-toploader";
 
-export default function PageAnimation({ children }) {
+export default function PageAnimation({ children }: { children: React.ReactNode }) {
   return (
     <>
       <NextTopLoader color="#ffffff" />

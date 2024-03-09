@@ -1,8 +1,7 @@
-import React from "react";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
-export default function TopButtons({ href }) {
+export default function TopButtons({ href }: { href: string }) {
   if (!href) throw new Error("href is required");
 
   return (

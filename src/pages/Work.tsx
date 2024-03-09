@@ -1,25 +1,22 @@
-import React from "react";
-import PageAnimation from "../animation";
+import PageAnimation from "../components/Animation";
+import TopButtons from "../components/TopButtons";
 import { motion } from "framer-motion";
 import { config } from "../config";
-import TopButtons from "../topButtons";
 
 
-
-
-export default function Projects() {
+export default function MyWork() {
   return (
     <PageAnimation>
       <TopButtons href={"/"} />
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-4xl font-bold text-white text-center mt-4">
-          My Projects
+          My Work
         </h1>
         <p className="text-[16px] text-white text-center mt-2">
-          These are the projects I have worked on.
+          These are the projects I have worked on in the past.
         </p>
         <div className="flex flex-col items-center justify-center mt-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {config.projects.map((project, index) => (
               <div
                 key={index}

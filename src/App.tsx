@@ -1,11 +1,10 @@
-import React from "react";
+import { motion } from "framer-motion";
+import PageAnimation from "./components/Animation";
 import { config } from "./config";
 import { MdVerified } from "react-icons/md";
 import { FiGithub } from "react-icons/fi";
 import { CiMail } from "react-icons/ci";
 import { IoLogoDiscord } from "react-icons/io5";
-import { motion } from "framer-motion";
-import PageAnimation from "./animation";
 
 export default function App() {
   return (
@@ -17,6 +16,7 @@ export default function App() {
         width={96}
         height={96}
       />
+
       <h1 className="text-[20px] font-bold text-white text-center mt-4">
         {config.name} <MdVerified className="inline text-blue-500" />
       </h1>
@@ -40,7 +40,10 @@ export default function App() {
               <CiMail className="text-white text-2xl mx-2" size="1.3em" />
             )}
             {social.name === "discord" && (
-              <IoLogoDiscord className="text-white text-2xl mx-2" size="1.3em" />
+              <IoLogoDiscord
+                className="text-white text-2xl mx-2"
+                size="1.3em"
+              />
             )}
           </motion.a>
         ))}
@@ -52,7 +55,9 @@ export default function App() {
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
-            className={`inline-block bg-darkLight w-10/12 md:w-1/2 font-bold p-3 rounded-[8px] text-white text-center leading-12 border-2 border-darkBorder ${button.shake && "shake-animation"}`}
+            className={`inline-block bg-darkLight w-10/12 md:w-1/2 font-bold p-3 rounded-[8px] text-white text-center leading-12 border-2 border-darkBorder ${
+              button.shake && "shake-animation"
+            }`}
             href={button.href}
             rel="noreferrer"
             key={index}

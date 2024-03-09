@@ -13,6 +13,7 @@ import {
   SiNodedotjs,
   SiPostgresql,
   SiPrisma,
+  SiRailway,
   SiReact,
   SiTailwindcss,
   SiTypescript,
@@ -22,6 +23,7 @@ import {
 } from "react-icons/si";
 import PageAnimation from "../components/Animation";
 import TopButtons from "../components/TopButtons";
+
 
 const size = 30;
 
@@ -101,6 +103,10 @@ const experiences = [
   {
     name: "Docker",
     icon: <SiDocker className="text-blue-500" size={size} />,
+  },
+  {
+    name: "Railway",
+    icon: <SiRailway className="text-white " size={size} />,
   },
   {
     name: "Ubuntu",

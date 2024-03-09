@@ -6,8 +6,37 @@ import { FiGithub } from "react-icons/fi";
 import { CiMail } from "react-icons/ci";
 import { IoLogoDiscord } from "react-icons/io5";
 import Typewriter from 'typewriter-effect';
+import { useEffect } from "react";
 
 export default function App() {
+
+
+  useEffect(() => {
+    let i = 0;
+    let text = config.name;
+    let speed = 500;
+
+    setInterval(() => {
+      // Check if the text is not fully displayed
+      if (i === text.length) {
+        i = 0;
+
+        document.title = text.substring(0, i + 1);
+      }
+
+      if (i < text.length) {
+     
+        document.title = text.substring(0, i + 1);
+        i++;
+      }
+    }, speed);
+    
+
+    return () => {
+      document.title = text
+    };
+  }, []);
+
   return (
     <PageAnimation>
       <img

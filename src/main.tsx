@@ -3,6 +3,7 @@ import React from "react";
 import { Toaster } from "sonner";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import NextTopLoader from "nextjs-toploader";
 
 // Pages
 import App from "./App.tsx";
@@ -39,6 +40,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
+    <NextTopLoader color="#ffffff" />
     <Toaster visibleToasts={1} duration={3000} position="bottom-center" />
     <RouterProvider router={router} />
   </React.StrictMode>

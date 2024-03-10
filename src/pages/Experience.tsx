@@ -2,6 +2,7 @@ import {
   SiBun,
   SiCss3,
   SiDocker,
+  SiExpress,
   SiFigma,
   SiGithub,
   SiGo,
@@ -39,6 +40,10 @@ const experiences = [
   {
     name: "React",
     icon: <SiReact className="text-blue-500" size={size} />,
+  },
+  {
+    name: "Express.js",
+    icon: <SiExpress className="text-white" size={size} />,
   },
   {
     name: "Next.js",

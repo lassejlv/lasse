@@ -42,7 +42,7 @@ export default function App() {
       <img
         src={config.avatar}
         alt="avatar"
-        className="rounded-full mx-auto"
+        className="rounded-full mx-auto hover:animate-pulse"
         width={96}
         height={96}
       />

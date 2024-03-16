@@ -1,5 +1,5 @@
 export const config = {
-  avatar: "/lasse.png",
+  avatar: "/IMG_4607.png",
   name: "lasse",
   typewriter_strings: [
     "Full Stack Developer",

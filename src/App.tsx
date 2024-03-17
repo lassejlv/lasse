@@ -7,6 +7,7 @@ import { CiMail } from "react-icons/ci";
 import { IoLogoDiscord } from "react-icons/io5";
 import Typewriter from 'typewriter-effect';
 import { useEffect } from "react";
+import { SiDiscord, SiGithub } from "react-icons/si";
 
 export default function App() {
 
@@ -74,15 +75,15 @@ export default function App() {
             key={index}
           >
             {social.name === "github" && (
-              <FiGithub className="text-white text-2xl mx-2" size="1.3em" />
+              <SiGithub className="text-white text-2xl mx-2" size="1.2em" />
             )}
             {social.name === "mail" && (
               <CiMail className="text-white text-2xl mx-2" size="1.3em" />
             )}
             {social.name === "discord" && (
-              <IoLogoDiscord
+              <SiDiscord
                 className="text-white text-2xl mx-2"
-                size="1.3em"
+                size="1.2em"
               />
             )}
           </motion.a>
@@ -94,7 +95,8 @@ export default function App() {
         {config.buttons.map((button, index) => (
           <motion.a
             whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.8 }}
+            whileTap={{ scale: 0.9 }}
+            whileFocus={{ scale: 1.1 }}
             className={`inline-block bg-darkLight w-10/12 md:w-1/2 font-bold p-3 rounded-[8px] text-white text-center leading-12 border-2 border-darkBorder ${
               button.shake && "shake-animation"
             }`}

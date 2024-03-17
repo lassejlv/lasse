@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-dark;
+  @apply bg-gradient-to-r from-dark to-[#17181c];
   font-family: "Poppins", sans-serif;
 }
 

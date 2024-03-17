@@ -1,12 +1,13 @@
 export const config = {
   avatar: "/IMG_4607.png",
+  displayVerifyBadge: false,
   name: "lasse",
   typewriter_strings: [
     "Full Stack Developer",
+    "With 4+ years of experience",
     "Web Developer",
     "Backend Developer",
     "Frontend Developer",
-    "Discord Bot Developer",
   ],
   socials: [
     {
@@ -32,8 +33,8 @@ export const config = {
   buttons: [
     {
       id: 1,
-      name: "✨ Donate",
-      href: "https://ko-fi.com/lassejlv",
+      name: "💸 Donate",
+      href: "https://donate.stripe.com/00g4gB4LXaRy57WcMM",
       icon: null,
       shake: true,
     },

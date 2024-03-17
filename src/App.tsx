@@ -48,7 +48,7 @@ export default function App() {
       />
 
       <h1 className="text-[20px] font-bold text-white text-center mt-4">
-        {config.name} <MdVerified className="inline text-blue-500" />
+        {config.name} {config.displayVerifyBadge &&  <MdVerified className="inline text-blue-500" />}
       </h1>
       <p className="text-[16px] text-white text-center mt-2">
         <Typewriter

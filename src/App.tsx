@@ -43,6 +43,7 @@ export default function App() {
         alt="avatar"
         className="rounded-full mx-auto hover:animate-pulse"
         width={96}
+        loading="lazy"
         height={96}
       />
 

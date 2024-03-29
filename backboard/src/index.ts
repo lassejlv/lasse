@@ -3,16 +3,17 @@ import { cors } from "hono/cors";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+const url = "https://lassejlv.dk"
 
 const app = new Hono();
 app.use("*", cors());
 
 app.get("/", (c) => {
-  return c.redirect("https://lassejlv.dk")
+  return c.redirect(url)
 });
 
 app.notFound((c) => {
-  return c.redirect("https://lassejlv.dk")
+  return c.redirect(url)
 })
 
 app.post("/resend", async (c) => {

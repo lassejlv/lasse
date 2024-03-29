@@ -34,8 +34,7 @@ export default function Contact() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          firstName: parseData.data.name,
-          lastName: parseData.data.name,
+          name: parseData.data.name,
           email: parseData.data.email,
           message: parseData.data.message,
         }),

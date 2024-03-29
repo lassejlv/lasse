@@ -18,20 +18,19 @@ app.notFound((c) => {
 app.post("/resend", async (c) => {
   const body = await c.req.json();
 
-  if (!body.firstName || !body.lastName || !body.email || !body.message) {
+  if (!body.name || !body.email || !body.message) {
     c.status(400);
     return c.json({ error: "Missing required fields" });
   }
 
   // Send email stuff
   const { data, error } = await resend.emails.send({
-    from: "Hypll Mail-Service <transport@mail.hypll.org>",
+    from: "Contact submission <transport@mail.hypll.org>",
     to: [process.env.EMAIL_TO as string],
     subject: "New contact form submission",
     html: `
       <h1>New contact form submission</h1>
-      <p>First name: ${body.firstName}</p>
-      <p>Last name: ${body.lastName}</p>
+      <p>Name: ${body.name}</p>
       <p>Email: ${body.email}</p>
       <p>Message: ${body.message}</p>
     `,

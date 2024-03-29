@@ -29,20 +29,19 @@ app.post("/resend", async (c) => {
     to: [process.env.EMAIL_TO as string],
     subject: "New contact form submission",
     html: `
-      <h1>New contact form submission</h1>
-      <p>Name: ${body.name}</p>
-      <p>Email: ${body.email}</p>
-      <p>Message: ${body.message}</p>
+      <p><strong>Name:</strong> ${body.name}</p>
+      <p><strong>Email:</strong> ${body.email}</p>
+      <p><strong>Message:</strong> ${body.message}</p>
     `,
   });
 
   if (error) {
     c.status(500);
-    return c.json({ error: "Failed to send email" });
+    return c.json({ success: false });
   }
 
   c.status(200);
-  return c.json({ data });
+  return c.json({ success: true  });
 });
 
 export default {

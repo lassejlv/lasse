@@ -6,14 +6,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 const url = "https://lassejlv.dk"
 
 const app = new Hono();
-app.use("*", cors({
-    origin: process.env.CORS_ORIGIN as string,
-    allowHeaders: ['X-Custom-Header', 'Upgrade-Insecure-Requests'],
-    allowMethods: ['POST'],
-    exposeHeaders: ['Content-Length', 'X-Kuma-Revision'],
-    maxAge: 600,
-    credentials: true,
-}));
+app.use("*", cors());
 
 app.get("/", (c) => {
   return c.redirect(url)

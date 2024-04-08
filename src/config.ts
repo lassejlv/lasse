@@ -1,5 +1,5 @@
 export const config = {
-  avatar: "/IMG_4607.png",
+  avatar: "/4791-cat-pfpsgg.gif",
   displayVerifyBadge: false,
   name: "lasse",
   typewriter_strings: [

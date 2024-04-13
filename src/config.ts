@@ -4,7 +4,7 @@ export const config = {
   name: "lasse",
   typewriter_strings: [
     "Full Stack Developer",
-    "With 4+ years of experience",
+    "With 5+ years of experience", 
     "Web Developer",
     "Backend Developer",
     "Frontend Developer",
